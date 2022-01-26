@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: $mainFontSize;
+  color: $mainFontColor;
+}
+body {
+  font-family: $mainFont;
+  font-size: 1rem;
+  line-height: $lineHeight;
+}
+// .container {
+//   @include min-max(20rem, 100%, 0);
+// }
+// .wrapper {
+//   @include min-max(20rem, 65.625rem, 1rem);
+// }
