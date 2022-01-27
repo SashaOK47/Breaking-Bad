@@ -1,8 +1,9 @@
 @import "./reset";
 @import "./vars";
 @import "./fonts";
-@import "./mixins";
 @import "./breakpoint";
+@import "./mixins";
+
 html {
   font-size: 16px;
 }
@@ -10,8 +11,5 @@ body {
   @include mainFont;
 }
 .container {
-  @include min-max(20rem, 100%, 0);
-}
-.wrapper {
-  @include min-max(20rem, 77rem, 1rem);
+  @include container;
 }

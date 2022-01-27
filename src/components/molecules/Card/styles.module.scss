@@ -4,7 +4,7 @@
   display: flex;
   background: $white;
   border-radius: 0.25rem;
-  @include custom(42rem) {
+  @include custom(675px) {
     margin: 1rem auto;
   }
   @include box-shadow;

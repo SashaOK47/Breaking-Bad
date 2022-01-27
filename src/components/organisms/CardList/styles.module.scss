@@ -6,7 +6,7 @@
   @include tabletLg {
     grid-template-columns: repeat(2, 1fr);
   }
-  @include custom(42rem) {
+  @include custom(675px) {
     display: block;
   }
 }

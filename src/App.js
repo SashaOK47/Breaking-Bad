@@ -1,11 +1,10 @@
 import "./assets/styles/main.scss";
-
 import CardList from "./components/organisms/CardList";
 
 function App() {
   return (
     <div className="App">
-      <div className="wrapper">
+      <div className="container">
         <CardList />
       </div>
     </div>
