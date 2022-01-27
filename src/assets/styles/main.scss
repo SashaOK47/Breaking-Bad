@@ -2,4 +2,16 @@
 @import "./vars";
 @import "./fonts";
 @import "./mixins";
-@import "./core";
+@import "./breakpoint";
+html {
+  font-size: 16px;
+}
+body {
+  @include mainFont;
+}
+// .container {
+//   @include min-max(20rem, 100%, 0);
+// }
+// .wrapper {
+//   @include min-max(20rem, 65.625rem, 1rem);
+// }

@@ -1,5 +1,3 @@
-// import logo from "./logo.svg";
-import "./App.scss";
 import Card from "./components/molecules/Card";
 
 function App() {
