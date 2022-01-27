@@ -25,12 +25,3 @@
   font-size: 0.75rem;
   line-height: 1.5rem;
 }
-// Или такой миксин?) Чуть что letter-spacing, font-variant и т.д. дописывать где нужно)
-@mixin font($weight: 400, $fz: 1rem, $lh: 1.5rem) {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: $weight;
-  font-size: $fz;
-  line-height: $lh;
-  @content;
-}

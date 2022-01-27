@@ -7,7 +7,7 @@
   @include custom(675px) {
     margin: 1rem auto;
   }
-  @include box-shadow;
+  @include boxShadowCard;
   .photoBlock {
     width: 7.75rem;
     height: 7.75rem;
