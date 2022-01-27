@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
+@mixin mainFont {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: $mainFontColor;
+}
+@mixin fontSmallCaps {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  color: $colorFontStatus;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 0.06em;
+  font-variant: small-caps;
+}
+@mixin fontSmall {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  color: $mainFontColor;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+}
+// Или такой миксин?) Чуть что letter-spacing, font-variant и т.д. дописывать где нужно)
+@mixin font($weight: 400, $fz: 1rem, $lh: 1.5rem) {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $fz;
+  line-height: $lh;
+  @content;
+}

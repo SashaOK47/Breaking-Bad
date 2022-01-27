@@ -1,0 +1,10 @@
+@mixin min-max($min-width, $max-width, $padding) {
+  min-width: $min-width;
+  max-width: $max-width;
+  padding: 0 $padding;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+@mixin box-shadow($x: 0, $y: 0.25rem, $blur: 0.5rem, $color: $blackOpacity) {
+  box-shadow: $x $y $blur $color;
+}
