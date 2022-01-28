@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import style from "./styles.module.scss";
 
 const Card = ({ person }) => {
@@ -16,5 +17,7 @@ const Card = ({ person }) => {
     </div>
   );
 };
-
+Card.propTypes = {
+  cards: PropTypes.object,
+};
 export default Card;

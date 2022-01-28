@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import Card from "../../molecules/Card";
 import style from "./styles.module.scss";
 
@@ -9,5 +10,8 @@ const CardList = ({ persons }) => {
       ))}
     </div>
   );
+};
+CardList.propTypes = {
+  cards: PropTypes.array,
 };
 export default CardList;
