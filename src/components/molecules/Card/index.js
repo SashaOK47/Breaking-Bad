@@ -1,18 +1,16 @@
-import React from "react";
 import style from "./styles.module.scss";
-import photo from "../../../assets/images/photo.jpg";
 
-const Card = () => {
+const Card = ({ card }) => {
   return (
     <div className={style.card}>
       <div className={style.photoBlock}>
-        <img className={style.photo} src={photo} alt="Photo" />
+        <img className={style.photo} src={card.img} alt="Photo" />
       </div>
       <div className={style.description}>
-        <p className={style.status}>живой</p>
-        <p className={style.name}>Андрей Панасюк</p>
+        <p className={style.status}>{card.status}</p>
+        <p className={style.name}>{card.name}</p>
         <time className={style.date} dateTime="2001-11-23">
-          23.11.2001
+          {card.birthday}
         </time>
       </div>
     </div>

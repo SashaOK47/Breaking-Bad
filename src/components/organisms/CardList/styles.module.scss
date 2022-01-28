@@ -1,0 +1,12 @@
+@import "../../../assets/styles/main.scss";
+.cardList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem 2rem;
+  @include tabletLg {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include custom(675px) {
+    display: block;
+  }
+}
