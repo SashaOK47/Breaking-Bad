@@ -7,6 +7,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
   @include custom(675px) {
-    display: block;
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 }
