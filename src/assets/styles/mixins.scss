@@ -6,6 +6,12 @@
     padding: 0 1rem;
   }
 }
+@mixin boxShadow($x: 0, $y: 0.25rem, $blur: 0.5rem, $color: $blackOpacity) {
+  box-shadow: $x $y $blur $color;
+}
 @mixin boxShadowCard {
   box-shadow: 0 0.25rem 0.5rem $blackOpacity;
+}
+@mixin boxShadowCardHover {
+  box-shadow: 0.5rem 0.5rem 0.5rem $blackOpacity;
 }
