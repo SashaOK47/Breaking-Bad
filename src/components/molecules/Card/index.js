@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 import style from "./styles.module.scss";
 
-const Card = ({ person }) => {
-  const { name, status, img, birthday } = person;
+const Card = ({ character }) => {
+  const { name, status, img, birthday } = character;
   return (
     <div className={style.card}>
       <div className={style.photoBlock}>
@@ -11,14 +11,12 @@ const Card = ({ person }) => {
       <div className={style.description}>
         <p className={style.status}>{status}</p>
         <p className={style.name}>{name}</p>
-        <time className={style.date} dateTime="2001-11-23">
-          {birthday}
-        </time>
+        <time className={style.date}>{birthday}</time>
       </div>
     </div>
   );
 };
 Card.propTypes = {
-  cards: PropTypes.object,
+  character: PropTypes.object,
 };
 export default Card;
