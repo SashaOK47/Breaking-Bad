@@ -27,7 +27,4 @@ export const getCharactersFromAPI = () => async (dispatch) => {
     dispatch(isError(error));
   } else dispatch(setCharacters(value));
   dispatch(isLoader(false));
-  // setTimeout(() => {
-  //   dispatch(isLoader(false));
-  // }, 2000);
 };
