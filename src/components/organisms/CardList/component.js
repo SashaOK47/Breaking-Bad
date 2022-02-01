@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import style from "./styles.module.scss";
 import Card from "../../molecules/Card";
+import { Link } from "react-router-dom";
 
 const CardList = ({ characters, isLoader }) => {
   return isLoader ? (
@@ -8,7 +9,13 @@ const CardList = ({ characters, isLoader }) => {
   ) : (
     <div className={style.cardList}>
       {characters.map((character) => (
-        <Card character={character} key={character.char_id} />
+        <Link
+          to={`/character/${character.char_id}`}
+          key={character.char_id}
+          className={style.cardLink}
+        >
+          <Card character={character} />
+        </Link>
       ))}
     </div>
   );

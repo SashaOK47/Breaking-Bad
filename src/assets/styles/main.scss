@@ -15,6 +15,9 @@ body {
   background-color: $bgColor;
   @include mainFont;
 }
+a {
+  color: inherit;
+}
 .container {
   @include container;
 }
