@@ -11,9 +11,21 @@ html {
   }
 }
 body {
-  max-height: 100vh;
   background-color: $bgColor;
   @include mainFont;
+}
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex: 1 1 auto;
+}
+.header,
+.footer {
+  min-height: 80px;
+  background-color: $white;
 }
 a {
   color: inherit;

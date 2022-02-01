@@ -8,13 +8,23 @@ import CharacterPage from "./components/pages/CharacterPage";
 const App = () => {
   return (
     <Router>
-      <div className="app">
-        <div className="container">
-          <Routes>
-            <Route path="/" element={<MainPage />} />
-            <Route path="characters" element={<CharactersPage />} />
-            <Route path="character/:char_id" element={<CharacterPage />} />
-          </Routes>
+      <div className="App">
+        <div className="wrapper">
+          <header className="header">
+            <div className="container">HEADER</div>
+          </header>
+          <main className="main">
+            <div className="container">
+              <Routes>
+                <Route path="/" element={<MainPage />} />
+                <Route path="characters" element={<CharactersPage />} />
+                <Route path="character/:char_id" element={<CharacterPage />} />
+              </Routes>
+            </div>
+          </main>
+          <footer className="footer">
+            <div className="container">FOOTER</div>
+          </footer>
         </div>
       </div>
     </Router>
