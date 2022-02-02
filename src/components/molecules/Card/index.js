@@ -1,10 +1,11 @@
 import PropTypes from "prop-types";
 import style from "./styles.module.scss";
+import { Link } from "react-router-dom";
 
 const Card = ({ character }) => {
   const { name, status, img, birthday } = character;
   return (
-    <div className={style.card}>
+    <Link to={`/character/${character.char_id}`} className={style.card}>
       <div className={style.photoBlock}>
         <img className={style.photo} src={img} alt={name} />
       </div>
@@ -13,7 +14,7 @@ const Card = ({ character }) => {
         <p className={style.name}>{name}</p>
         <time className={style.date}>{birthday}</time>
       </div>
-    </div>
+    </Link>
   );
 };
 Card.propTypes = {

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import CardList from "./component";
 import { getCharactersFromAPI } from "../../../store/actions/characters";
+import Error from "../../atoms/Error";
 
 const CardListContainer = () => {
   const dispatch = useDispatch();
@@ -14,7 +15,7 @@ const CardListContainer = () => {
   }, []);
 
   return isError ? (
-    <div style={{ color: "red", textAlign: "center" }}>{isError}</div>
+    <Error message={isError} />
   ) : (
     <CardList characters={characters} isLoader={isLoader} />
   );
