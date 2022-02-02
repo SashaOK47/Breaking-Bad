@@ -1,6 +1,6 @@
 import axios from "axios";
 class Core {
-  getCharacters = async (limit = 10, offset = 0) => {
+  getCharacters = async (limit = 5, offset = 0) => {
     const result = {
       value: null,
       error: null,
