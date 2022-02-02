@@ -1,26 +1,17 @@
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import "./assets/styles/main.scss";
-
 import MainPage from "./components/pages/MainPage";
 import CharactersPage from "./components/pages/CharactersPage";
 import CharacterPage from "./components/pages/CharacterPage";
 import NotFound from "./components/pages/NotFound";
+import Header from "./components/organisms/Header";
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className="App">
         <div className="wrapper">
-          {/* Временно */}
-          <header className="header">
-            <div
-              className="container"
-              style={{ display: "flex", justifyContent: "space-between" }}
-            >
-              <span>Header</span>
-              <Link to="/characters">Characters Page</Link>
-            </div>
-          </header>
+          <Header />
           <main className="main">
             <div className="container">
               <Routes>
