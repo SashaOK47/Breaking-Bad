@@ -1,0 +1,26 @@
+@import "../../../assets/styles/main.scss";
+.header {
+  padding: 1rem 0;
+  background-color: $white;
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a:last-child {
+      padding: 0.5rem 1rem;
+      border: 0.1rem solid $colorBgLink;
+      border-radius: 0.25rem;
+      transition: background-color 0.3s;
+      &.active {
+        background-color: $colorBgLink;
+      }
+    }
+    .catalog {
+      display: flex;
+      button {
+        background: none;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
