@@ -1,0 +1,15 @@
+@import "../../../assets/styles/main.scss";
+.notFound {
+  text-align: center;
+  .message {
+    margin: 5rem 0 2rem;
+    font-size: 4rem;
+    color: $colorError;
+  }
+  .link {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

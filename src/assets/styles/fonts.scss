@@ -25,3 +25,11 @@
   font-size: 0.75rem;
   line-height: 1.5rem;
 }
+@mixin fontBig {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  color: $mainFontColor;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}

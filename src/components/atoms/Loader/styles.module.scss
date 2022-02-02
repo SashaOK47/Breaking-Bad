@@ -1,0 +1,19 @@
+@import "../../../assets/styles/main.scss";
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+  margin-left: -50px;
+  border-radius: 50%;
+  border-top: 3px solid $colorFontStatus;
+  border-right: 3px solid transparent;
+  animation: loader 0.7s linear infinite;
+}
+@keyframes loader {
+  to {
+    transform: rotate(360deg);
+  }
+}
