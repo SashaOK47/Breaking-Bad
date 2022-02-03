@@ -11,13 +11,19 @@
       border: 0.1rem solid $colorBgLink;
       border-radius: 0.25rem;
       transition: background-color 0.3s;
+      &:hover {
+        background-color: $colorBgLink;
+      }
       &.active {
         background-color: $colorBgLink;
+        &:hover {
+          cursor: no-drop;
+        }
       }
     }
     .catalog {
       display: flex;
-      button {
+      span {
         background: none;
         margin-left: 0.5rem;
       }
