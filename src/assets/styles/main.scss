@@ -14,14 +14,10 @@ body {
   background-color: $bgColor;
   @include mainFont;
 }
-.wrapper {
+.app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
-.main {
-  padding: 1rem 0;
-  flex: 1 1 auto;
 }
 a {
   color: inherit;

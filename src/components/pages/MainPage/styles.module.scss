@@ -1,0 +1,9 @@
+@import "../../../assets/styles/main.scss";
+.mainPage {
+  flex: 1 1 auto;
+  .img {
+    width: 100%;
+    height: calc(100vh - 80px - 80px);
+    object-fit: cover;
+  }
+}
