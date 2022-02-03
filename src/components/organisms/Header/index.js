@@ -18,7 +18,7 @@ const Header = () => {
           >
             <span className={style.catalog}>
               <img src={burger} alt="Burger" />
-              <button>Каталог</button>
+              <span>Каталог</span>
             </span>
           </NavLink>
         </nav>

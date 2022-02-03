@@ -20,12 +20,8 @@ body {
   flex-direction: column;
 }
 .main {
+  padding: 1rem 0;
   flex: 1 1 auto;
-}
-.header,
-.footer {
-  min-height: 80px;
-  background-color: $white;
 }
 a {
   color: inherit;

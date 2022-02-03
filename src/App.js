@@ -1,10 +1,11 @@
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
-import "./assets/styles/main.scss";
 import MainPage from "./components/pages/MainPage";
 import CharactersPage from "./components/pages/CharactersPage";
 import CharacterPage from "./components/pages/CharacterPage";
 import NotFound from "./components/pages/NotFound";
 import Header from "./components/organisms/Header";
+import Footer from "./components/organisms/Footer";
+import "./assets/styles/main.scss";
 
 const App = () => {
   return (
@@ -22,10 +23,7 @@ const App = () => {
               </Routes>
             </div>
           </main>
-          {/* Временно */}
-          <footer className="footer">
-            <div className="container">FOOTER</div>
-          </footer>
+          <Footer />
         </div>
       </div>
     </BrowserRouter>
