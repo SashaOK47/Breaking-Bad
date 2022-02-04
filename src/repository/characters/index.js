@@ -1,5 +1,5 @@
 import axios from "axios";
-class Core {
+class Characters {
   getCharacters = async (limit = 5, offset = 0) => {
     const result = {
       value: null,
@@ -38,4 +38,4 @@ class Core {
   };
 }
 
-export default new Core();
+export default new Characters();
