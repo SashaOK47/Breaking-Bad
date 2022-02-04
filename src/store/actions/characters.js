@@ -34,7 +34,7 @@ export const isError = (value) => {
 export const getCharactersFromAPI = () => async (dispatch) => {
   dispatch(isError(null));
   dispatch(isLoader(true));
-  const { value, error } = await Repository.APICore.getCharacters();
+  const { value, error } = await Repository.APICharacters.getCharacters();
   if (error || !value) {
     dispatch(isError(error));
   } else dispatch(setCharacters(value));
@@ -43,7 +43,7 @@ export const getCharactersFromAPI = () => async (dispatch) => {
 export const getCharacterByIdFromAPI = (id) => async (dispatch) => {
   dispatch(isError(null));
   dispatch(isLoader(true));
-  const { value, error } = await Repository.APICore.getCharacterById(id);
+  const { value, error } = await Repository.APICharacters.getCharacterById(id);
   if (error || !value) {
     dispatch(isError(error));
   } else {

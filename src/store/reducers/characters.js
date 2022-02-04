@@ -11,7 +11,7 @@ const initialState = {
   character: {},
 };
 
-const cards = (state = initialState, { type, value }) => {
+const characters = (state = initialState, { type, value }) => {
   switch (type) {
     case SET_CHARACTERS:
       return { ...state, characters: value };
@@ -25,4 +25,4 @@ const cards = (state = initialState, { type, value }) => {
       return state;
   }
 };
-export default cards;
+export default characters;

@@ -1,7 +1,9 @@
-import Core from "./core";
+import Characters from "./characters";
+import Quotes from "./quotes";
 
 class Reposirory {
-  APICore = Core;
+  APICharacters = Characters;
+  APIQuotes = Quotes;
 }
 
 export default new Reposirory();

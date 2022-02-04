@@ -3,7 +3,7 @@ import style from "./styles.module.scss";
 import Loader from "../../atoms/Loader";
 import React from "react";
 
-const Character = ({ character, isLoader }) => {
+const Character = ({ character, isLoader, quote, isLoaderQuote }) => {
   const { img, name, status, nickname, birthday } = character;
   return isLoader ? (
     <Loader />
@@ -23,9 +23,14 @@ const Character = ({ character, isLoader }) => {
             <span>Ник-нейм:</span> {nickname}
           </p>
           <blockquote className={style.quote}>
-            <span>Цитата:</span> Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Non, aliquam laoreet vivamus sed. Diam fames mi,
-            quam tellus cursus volutpat velit massa.
+            {isLoaderQuote && !isLoader ? (
+              <Loader />
+            ) : (
+              <span>
+                Цитата:
+                <span> {quote}</span>
+              </span>
+            )}
           </blockquote>
         </div>
       </div>
@@ -36,5 +41,7 @@ const Character = ({ character, isLoader }) => {
 Character.propTypes = {
   character: PropTypes.object,
   isLoader: PropTypes.bool,
+  quote: PropTypes.string,
+  isLoaderQuote: PropTypes.bool,
 };
 export default Character;
