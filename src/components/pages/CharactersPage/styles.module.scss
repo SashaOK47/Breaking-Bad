@@ -2,4 +2,8 @@
 .caharacterPage {
   padding: 1rem 0;
   flex: 1 1 auto;
+  .title {
+    margin-bottom: 2rem;
+    @include fontBig;
+  }
 }
