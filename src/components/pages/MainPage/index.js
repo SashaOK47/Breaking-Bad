@@ -1,12 +1,12 @@
 import style from "./styles.module.scss";
-import React from "react";
-import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import img from "../../../assets/images/main-bg.webp";
 
 const MainPage = () => {
   return (
-    <div>
-      <h1 style={{ textAlign: "center" }}>Main Page</h1>
-    </div>
+    <main className={style.mainPage}>
+      <LazyLoadImage src={img} className={style.img} alt="Main background" />
+    </main>
   );
 };
 

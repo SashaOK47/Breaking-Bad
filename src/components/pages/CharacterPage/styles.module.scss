@@ -1,5 +1,6 @@
 @import "../../../assets/styles/main.scss";
 .characterPage {
+  flex: 1 1 auto;
   padding: 2.5rem 0;
   @include tabletLg {
     padding: 1.25rem 0;
