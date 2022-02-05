@@ -9,6 +9,7 @@ const CardListContainer = () => {
   const characters = useSelector((state) => state.characters.characters);
   const isError = useSelector((state) => state.characters.isError);
   const isLoader = useSelector((state) => state.characters.isLoader);
+  const grid = useSelector((state) => state.characters.isGrid);
 
   useEffect(() => {
     dispatch(getCharactersFromAPI());
@@ -17,7 +18,7 @@ const CardListContainer = () => {
   return isError ? (
     <Error message={isError} />
   ) : (
-    <CardList characters={characters} isLoader={isLoader} />
+    <CardList characters={characters} isLoader={isLoader} grid={grid} />
   );
 };
 

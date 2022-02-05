@@ -5,7 +5,6 @@ const CharactersPage = () => {
   return (
     <div className={style.caharacterPage}>
       <div className={style.container}>
-        <h2 className={style.title}>Каталог</h2>
         <CardList />
       </div>
     </div>

@@ -8,10 +8,13 @@
   border-radius: 0.25rem;
   cursor: pointer;
   @include boxShadowCard;
-  transition: transform 0.5s, box-shadow 0.5s;
+  transition: transform 0.5s, box-shadow 0.5s, background 0.5s;
   &:hover {
     @include boxShadowCardHover;
     transform: translateY(-0.125rem);
+  }
+  &:focus-visible {
+    @include boxShadowFocus;
   }
   .photoBlock {
     width: 7.75rem;
@@ -25,7 +28,7 @@
     }
   }
   .description {
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.3rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -38,6 +41,66 @@
     .date {
       @include fontSmall;
       opacity: 0.4;
+    }
+  }
+  &.list {
+    padding: 0.5rem 0;
+    max-width: 100%;
+    max-height: 5rem;
+    background: none;
+    box-shadow: none;
+    border-top: 0.0625rem solid $gray;
+    border-bottom: 0.0625rem solid $gray;
+    border-radius: 0;
+    &:not(:last-child) {
+      border-bottom: none;
+    }
+    &:hover {
+      transform: none;
+      background: darken($white, 3%);
+      @include boxShadowCardHover;
+    }
+    &:focus-visible {
+      box-shadow: 0 0 0 0.125rem $colorFocus;
+    }
+    .photoBlock {
+      width: 4.0625rem;
+      height: 4.0625rem;
+      @include mobile {
+        width: 3.125rem;
+        height: auto;
+      }
+      .photo {
+        border-radius: 0;
+      }
+    }
+    .description {
+      max-width: 48.125rem;
+      width: 100%;
+      padding: 1rem 2.5rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: start;
+      align-items: center;
+      @include custom(840px) {
+        padding-right: 0;
+      }
+      @include mobile {
+        padding: 0 0.5rem;
+      }
+      .status {
+        margin-bottom: 0;
+        @include mobile {
+          max-width: 3.125rem;
+          padding: 0.2rem 0.1rem;
+        }
+      }
+      .name {
+        @include mobile {
+          max-width: 3.75rem;
+          @include fontSmall;
+        }
+      }
     }
   }
 }

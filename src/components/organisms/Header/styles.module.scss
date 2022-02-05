@@ -6,6 +6,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .logo {
+      width: 5rem;
+      height: 3rem;
+      &:focus-visible {
+        @include boxShadowFocus;
+      }
+    }
     a:last-child {
       padding: 0.4rem 0.9rem;
       border: 0.1rem solid $colorBgLink;
@@ -16,9 +23,16 @@
       }
       &.active {
         background-color: $colorBgLink;
+        &:focus-visible {
+          box-shadow: none;
+        }
         &:hover {
           cursor: no-drop;
         }
+      }
+      &:focus-visible {
+        @include boxShadowFocus;
+        border-color: transparent;
       }
     }
     .catalog {

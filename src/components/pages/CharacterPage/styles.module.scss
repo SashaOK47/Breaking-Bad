@@ -37,6 +37,9 @@
     &:hover::after {
       width: calc(100% - 2rem);
     }
+    &:focus-visible {
+      @include boxShadowFocus;
+    }
   }
 }
 @keyframes arrow {

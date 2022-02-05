@@ -41,7 +41,10 @@ export const getRandomQuoteByCharacterFromAPI = (name) => async (dispatch) => {
   } else {
     dispatch(setRandomQuoteByCharacter(...value));
   }
-  dispatch(isLoaderQuote(false));
+  // dispatch(isLoaderQuote(false));
+  setTimeout(() => {
+    dispatch(isLoaderQuote(false));
+  }, 300);
 };
 export const getRandomQuoteFromAPI = () => async (dispatch) => {
   dispatch(isErrorQuote(null));
@@ -52,5 +55,8 @@ export const getRandomQuoteFromAPI = () => async (dispatch) => {
   } else {
     dispatch(setRandomQuote(...value));
   }
-  dispatch(isLoaderQuote(false));
+  // dispatch(isLoaderQuote(false));
+  setTimeout(() => {
+    dispatch(isLoaderQuote(false));
+  }, 300);
 };
