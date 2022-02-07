@@ -2,10 +2,14 @@ import PropTypes from "prop-types";
 import style from "./styles.module.scss";
 import { Link } from "react-router-dom";
 
-const Card = ({ character }) => {
+const Card = ({ character, grid }) => {
   const { name, status, img, birthday } = character;
+  let card = style.card;
+  if (!grid) {
+    card += ` ${style.list}`;
+  }
   return (
-    <Link to={`/character/${character.char_id}`} className={style.card}>
+    <Link to={`/character/${character.char_id}`} className={card}>
       <div className={style.photoBlock}>
         <img className={style.photo} src={img} alt={name} />
       </div>

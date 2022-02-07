@@ -3,12 +3,19 @@
 @import "./fonts";
 @import "./breakpoint";
 @import "./mixins";
-
 html {
   font-size: 16px;
   @include mobile {
     font-size: 14px;
   }
+}
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: darken($bgColor, 15%);
+}
+::-webkit-scrollbar-thumb {
+  background-color: darken($bgColor, 30%);
+  border-radius: 9em;
 }
 body {
   background-color: $bgColor;

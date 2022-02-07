@@ -23,13 +23,11 @@ const Character = ({ character, isLoader, quote, isLoaderQuote }) => {
             <span>Ник-нейм:</span> {nickname}
           </p>
           <blockquote className={style.quote}>
+            <span>Цитата: </span>
             {isLoaderQuote && !isLoader ? (
-              <Loader />
+              <Loader small />
             ) : (
-              <span>
-                Цитата:
-                <span> {quote}</span>
-              </span>
+              <span> {quote}</span>
             )}
           </blockquote>
         </div>

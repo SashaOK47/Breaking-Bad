@@ -1,5 +1,11 @@
 @import "../../../assets/styles/main.scss";
 .caharacterPage {
-  padding: 1rem 0;
+  padding: 5rem 0;
   flex: 1 1 auto;
+  .wrapper {
+    position: relative;
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
 }

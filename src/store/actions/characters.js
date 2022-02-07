@@ -4,6 +4,7 @@ import {
   IS_LOADER,
   IS_ERROR,
   SET_CHARACTER,
+  IS_GRID,
 } from "../actionTypes/characters";
 
 export const setCharacters = (value) => {
@@ -30,6 +31,12 @@ export const isError = (value) => {
     value,
   };
 };
+export const toggleGridtoList = (value) => {
+  return {
+    type: IS_GRID,
+    value,
+  };
+};
 
 export const getCharactersFromAPI = () => async (dispatch) => {
   dispatch(isError(null));
@@ -51,3 +58,10 @@ export const getCharacterByIdFromAPI = (id) => async (dispatch) => {
   }
   dispatch(isLoader(false));
 };
+// export const toggleGridtoList = () => (dispatch) => {
+//   dispatch(isLoader(true));
+//   dispatch(toggleView());
+//   setTimeout(() => {
+//     dispatch(isLoader(false));
+//   }, 300);
+// }
