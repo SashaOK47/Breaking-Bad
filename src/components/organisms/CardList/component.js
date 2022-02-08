@@ -3,6 +3,8 @@ import style from "./styles.module.scss";
 import Card from "../../molecules/Card";
 import Loader from "../../atoms/Loader";
 import ToggleShowCard from "../../molecules/ToggleShowCard";
+import Pagination from "../../molecules/Pagination";
+import ToggleCountCard from "../../molecules/ToggleCountCard";
 
 const CardList = ({ characters, isLoader, grid }) => {
   let catalog = style.catalog;
@@ -27,6 +29,12 @@ const CardList = ({ characters, isLoader, grid }) => {
         </div>
         <div className={style.catalogList}>{isLoader ? <Loader /> : card}</div>
       </div>
+      {!isLoader ? (
+        <div className={style.filter}>
+          <Pagination />
+          <ToggleCountCard />
+        </div>
+      ) : null}
     </div>
   );
 };

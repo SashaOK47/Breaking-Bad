@@ -4,6 +4,8 @@ import {
   IS_LOADER,
   SET_CHARACTER,
   IS_GRID,
+  UPDATE_CURRENT_PAGE,
+  UPDATE_ITEMS_PER_PAGE,
 } from "../actionTypes/characters";
 const initialState = {
   characters: [],
@@ -11,6 +13,8 @@ const initialState = {
   isError: null,
   character: {},
   isGrid: true,
+  currentPage: 1,
+  itemsPerPage: 10,
 };
 
 const characters = (state = initialState, { type, value }) => {
@@ -25,6 +29,10 @@ const characters = (state = initialState, { type, value }) => {
       return { ...state, character: value };
     case IS_GRID:
       return { ...state, isGrid: value };
+    case UPDATE_CURRENT_PAGE:
+      return { ...state, currentPage: value };
+    case UPDATE_ITEMS_PER_PAGE:
+      return { ...state, itemsPerPage: value };
     default:
       return state;
   }

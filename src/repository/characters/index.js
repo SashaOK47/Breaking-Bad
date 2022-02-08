@@ -1,19 +1,13 @@
 import axios from "axios";
 class Characters {
-  getCharacters = async (limit = 5, offset = 0) => {
+  getCharacters = async () => {
     const result = {
       value: null,
       error: null,
     };
     try {
       const response = await axios.get(
-        "https://www.breakingbadapi.com/api/characters",
-        {
-          params: {
-            limit,
-            offset,
-          },
-        }
+        "https://www.breakingbadapi.com/api/characters"
       );
       result.value = response.data;
     } catch (e) {

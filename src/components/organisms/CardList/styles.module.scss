@@ -1,8 +1,9 @@
 @import "../../../assets/styles/main.scss";
 .cardList {
   min-height: 21.5625rem;
-  margin-top: 5rem;
+  // margin-top: 5rem;
   .catalog {
+    min-height: 640px;
     .wrapper {
       margin-bottom: 2rem;
       display: flex;
@@ -45,6 +46,15 @@
         grid-template-columns: 1fr;
         gap: 0;
       }
+    }
+  }
+  .filter {
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include tablet {
+      flex-direction: column;
     }
   }
 }
