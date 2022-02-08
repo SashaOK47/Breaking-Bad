@@ -1,4 +1,4 @@
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 import style from "./styles.module.scss";
 import arrow from "../../../assets/icons/arrow.svg";
 
@@ -34,5 +34,12 @@ const Pagination = ({
       </button>
     </div>
   );
+};
+Pagination.propTypes = {
+  arrOfCurrButtons: PropTypes.array,
+  currentPage: PropTypes.number,
+  handlerBtnNext: PropTypes.func,
+  handlerBtnPrev: PropTypes.func,
+  handleClick: PropTypes.func,
 };
 export default Pagination;
