@@ -18,3 +18,22 @@
 @mixin boxShadowFocus {
   box-shadow: 0 0 0 0.125rem $colorFocus;
 }
+@mixin filterBtn {
+  margin-right: 0.5rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  transition: background 0.3s, box-shadow 0.3s, color 0.3s;
+  background: none;
+  @include mainFont;
+  &:last-child {
+    margin-right: 0;
+  }
+  &.active {
+    background: $white;
+    color: $colorBgLink;
+    @include boxShadowCard;
+  }
+  &:focus-visible {
+    @include boxShadowFocus;
+  }
+}
