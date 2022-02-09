@@ -5,6 +5,8 @@ import {
   IS_ERROR,
   SET_CHARACTER,
   IS_GRID,
+  UPDATE_CURRENT_PAGE,
+  UPDATE_ITEMS_PER_PAGE,
 } from "../actionTypes/characters";
 
 export const setCharacters = (value) => {
@@ -37,15 +39,31 @@ export const toggleGridtoList = (value) => {
     value,
   };
 };
-
+export const UpdateCurrentPage = (value) => {
+  return {
+    type: UPDATE_CURRENT_PAGE,
+    value,
+  };
+};
+export const UpdateItemsPerPage = (value) => {
+  return {
+    type: UPDATE_ITEMS_PER_PAGE,
+    value,
+  };
+};
 export const getCharactersFromAPI = () => async (dispatch) => {
   dispatch(isError(null));
   dispatch(isLoader(true));
   const { value, error } = await Repository.APICharacters.getCharacters();
   if (error || !value) {
     dispatch(isError(error));
-  } else dispatch(setCharacters(value));
-  dispatch(isLoader(false));
+  } else {
+    const filterValue = value.filter(
+      (character) => character.name !== "Holly White"
+    );
+    dispatch(setCharacters(filterValue));
+    dispatch(isLoader(false));
+  }
 };
 export const getCharacterByIdFromAPI = (id) => async (dispatch) => {
   dispatch(isError(null));

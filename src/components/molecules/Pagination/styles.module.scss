@@ -1,0 +1,60 @@
+@import "../../../assets/styles/main.scss";
+.pagination {
+  display: flex;
+  @include tablet {
+    margin-bottom: 1.5rem;
+  }
+  .paginationList {
+    display: flex;
+    .paginationItem {
+      padding: 0.25rem 0.75rem;
+      cursor: pointer;
+      border-radius: 0.25rem;
+      transition: background 0.3s, box-shadow 0.3s, color 0.3s;
+      background: none;
+      margin-right: 0.5rem;
+      &:last-child {
+        margin-right: 0;
+      }
+      @include mainFont;
+      @include tablet {
+        padding: 0.25rem 0.5rem;
+      }
+      &.active {
+        background: $white;
+        color: $colorBgLink;
+        @include boxShadowCard;
+      }
+      &.disabled {
+        cursor: no-drop;
+        padding: 0;
+        &:focus-visible {
+          box-shadow: none;
+        }
+      }
+      &:focus-visible {
+        @include boxShadowFocus;
+      }
+    }
+  }
+  .btnPrev,
+  .btnNext {
+    background: none;
+    &:focus-visible {
+      @include boxShadowFocus;
+    }
+  }
+  .btnPrev {
+    margin-left: 2rem;
+    @include tablet {
+      margin-left: 1rem;
+    }
+  }
+  .btnNext {
+    margin-left: 1.25rem;
+    transform: rotate(180deg);
+    @include tablet {
+      margin-left: 1rem;
+    }
+  }
+}
