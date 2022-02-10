@@ -8,12 +8,13 @@ const CharactersSearch = ({
   searchResult,
   clickHandlerCatalog,
   result,
+  found,
 }) => {
   return (
     <div className={style.charactersSearch}>
       {charactersSearch.length ? (
         <p className={style.result}>
-          По вашему запросу <strong>"{searchResult}"</strong> найдено{" "}
+          По вашему запросу <strong>"{searchResult}"</strong> {found}{" "}
           <strong>{charactersSearch.length}</strong> {result}
         </p>
       ) : null}
