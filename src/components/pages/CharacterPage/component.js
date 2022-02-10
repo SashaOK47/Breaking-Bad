@@ -1,14 +1,12 @@
 import style from "./styles.module.scss";
-import { Link } from "react-router-dom";
 import Character from "../../organisms/Character";
+import LinkBtn from "../../atoms/LinkBtn";
 
 const CharacterPage = ({ character, isLoader }) => {
   return (
     <div className={style.characterPage}>
       <div className={style.container}>
-        <Link className={style.characterLink} to="/characters">
-          Назад в Каталог
-        </Link>
+        <LinkBtn to="/characters" />
         <Character character={character} isLoader={isLoader} />
       </div>
     </div>

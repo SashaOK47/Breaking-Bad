@@ -1,0 +1,24 @@
+@import "../../../assets/styles/main.scss";
+.charactersSearch {
+  .result,
+  .noResult {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    @include tabletLg {
+      text-align: center;
+    }
+  }
+  .characters {
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem 2rem;
+    @include tabletLg {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include custom(675px) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+  }
+}

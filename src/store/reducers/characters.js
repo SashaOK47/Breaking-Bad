@@ -6,6 +6,8 @@ import {
   IS_GRID,
   UPDATE_CURRENT_PAGE,
   UPDATE_ITEMS_PER_PAGE,
+  SET_CHARACTERS_SEARCH,
+  SET_SEARCH_QUERY,
 } from "../actionTypes/characters";
 const initialState = {
   characters: [],
@@ -15,6 +17,8 @@ const initialState = {
   isGrid: true,
   currentPage: 1,
   itemsPerPage: 10,
+  charactersSearch: null,
+  searchQuery: "",
 };
 
 const characters = (state = initialState, { type, value }) => {
@@ -33,6 +37,10 @@ const characters = (state = initialState, { type, value }) => {
       return { ...state, currentPage: value };
     case UPDATE_ITEMS_PER_PAGE:
       return { ...state, itemsPerPage: value };
+    case SET_CHARACTERS_SEARCH:
+      return { ...state, charactersSearch: value };
+    case SET_SEARCH_QUERY:
+      return { ...state, searchQuery: value };
     default:
       return state;
   }

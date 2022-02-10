@@ -7,6 +7,8 @@ import {
   IS_GRID,
   UPDATE_CURRENT_PAGE,
   UPDATE_ITEMS_PER_PAGE,
+  SET_CHARACTERS_SEARCH,
+  SET_SEARCH_QUERY,
 } from "../actionTypes/characters";
 
 export const setCharacters = (value) => {
@@ -51,6 +53,23 @@ export const UpdateItemsPerPage = (value) => {
     value,
   };
 };
+export const setCharactersSearch = (value) => {
+  return {
+    type: SET_CHARACTERS_SEARCH,
+    value,
+  };
+};
+export const setSearchQuery = (value) => {
+  return {
+    type: SET_SEARCH_QUERY,
+    value,
+  };
+};
+export const resetStoreAll = () => (dispatch) => {
+  dispatch(setCharactersSearch(null));
+  dispatch(UpdateItemsPerPage(10));
+  dispatch(UpdateCurrentPage(1));
+};
 export const getCharactersFromAPI = () => async (dispatch) => {
   dispatch(isError(null));
   dispatch(isLoader(true));
@@ -76,10 +95,3 @@ export const getCharacterByIdFromAPI = (id) => async (dispatch) => {
   }
   dispatch(isLoader(false));
 };
-// export const toggleGridtoList = () => (dispatch) => {
-//   dispatch(isLoader(true));
-//   dispatch(toggleView());
-//   setTimeout(() => {
-//     dispatch(isLoader(false));
-//   }, 300);
-// }
