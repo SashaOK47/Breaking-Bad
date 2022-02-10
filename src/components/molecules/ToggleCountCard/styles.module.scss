@@ -1,12 +1,21 @@
 @import "../../../assets/styles/main.scss";
 .countCard {
-  ul {
+  .list {
     display: flex;
-    li {
-      margin-left: 0.5rem;
-      &.active {
-        color: red;
+    align-items: center;
+    @include tablet {
+      flex-direction: column;
+    }
+    .text {
+      margin-right: 1rem;
+      @include tablet {
+        margin-right: 0;
+        margin-bottom: 1rem;
       }
+    }
+    button {
+      @include filterBtn;
+      padding: 0.25rem 0.5rem;
     }
   }
 }

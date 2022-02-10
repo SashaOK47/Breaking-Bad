@@ -6,24 +6,12 @@
   }
   .paginationList {
     display: flex;
-    .paginationItem {
+    align-items: center;
+    button {
+      @include filterBtn;
       padding: 0.25rem 0.75rem;
-      cursor: pointer;
-      border-radius: 0.25rem;
-      transition: background 0.3s, box-shadow 0.3s, color 0.3s;
-      background: none;
-      margin-right: 0.5rem;
-      &:last-child {
-        margin-right: 0;
-      }
-      @include mainFont;
       @include tablet {
         padding: 0.25rem 0.5rem;
-      }
-      &.active {
-        background: $white;
-        color: $colorBgLink;
-        @include boxShadowCard;
       }
       &.disabled {
         cursor: no-drop;
@@ -31,9 +19,6 @@
         &:focus-visible {
           box-shadow: none;
         }
-      }
-      &:focus-visible {
-        @include boxShadowFocus;
       }
     }
   }
