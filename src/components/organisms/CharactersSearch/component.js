@@ -26,9 +26,8 @@ const CharactersSearch = ({
         </div>
       ) : (
         <p className={style.noResult}>
-          {/* По Вашему запросу <strong>"{searchResult}"</strong> результатов не
-          найдено */}
-          Это следующая таска!
+          По Вашему запросу <strong>"{searchResult}"</strong> результатов не
+          найдено
         </p>
       )}
       <LinkBtn to="#" onClick={clickHandlerCatalog} />
