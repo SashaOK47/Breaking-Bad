@@ -9,6 +9,7 @@ exports[`ToggleShowCard component should render ToggleShowCard component 1`] = `
   >
     <svg
       className="active"
+      data-show="list"
       fill="none"
       height="24"
       viewBox="0 0 24 24"
@@ -38,6 +39,7 @@ exports[`ToggleShowCard component should render ToggleShowCard component 1`] = `
   >
     <svg
       className=""
+      data-show="grid"
       fill="none"
       height="24"
       viewBox="0 0 24 24"
@@ -90,6 +92,7 @@ exports[`ToggleShowCard component with the transfer of prop grid 1`] = `
   >
     <svg
       className=""
+      data-show="list"
       fill="none"
       height="24"
       viewBox="0 0 24 24"
@@ -119,6 +122,7 @@ exports[`ToggleShowCard component with the transfer of prop grid 1`] = `
   >
     <svg
       className="active"
+      data-show="grid"
       fill="none"
       height="24"
       viewBox="0 0 24 24"

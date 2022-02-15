@@ -15,6 +15,7 @@ const ToggleShowCard = ({
     <div className={style.icons}>
       <button type="button" onKeyDown={enterHandler}>
         <svg
+          data-show="list"
           className={noActive}
           onClick={clickHandler}
           width="24"
@@ -29,6 +30,7 @@ const ToggleShowCard = ({
       </button>
       <button type="button" onKeyDown={enterHandlerActive}>
         <svg
+          data-show="grid"
           className={classActive}
           onClick={clickHandlerActive}
           width="24"

@@ -11,7 +11,7 @@ const Pagination = ({
   handleClick,
 }) => {
   return (
-    <div className={style.pagination}>
+    <div className={style.pagination} data-test="pagination">
       <div className={style.paginationList}>
         {arrOfCurrButtons.map((item, index) => {
           let cls = style.paginationItem;
