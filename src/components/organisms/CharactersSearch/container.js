@@ -15,12 +15,15 @@ const CharactersSearchContainer = ({ charactersSearch }) => {
   };
 
   let result;
+  let found;
   if (charactersSearch.length === 1) {
     result = "результат";
+    found = "найден";
   } else if (charactersSearch.length >= 2 && charactersSearch.length <= 4) {
     result = "результата";
   } else {
     result = "результатов";
+    found = "найдено";
   }
 
   return (
@@ -29,6 +32,7 @@ const CharactersSearchContainer = ({ charactersSearch }) => {
       searchResult={searchResult}
       clickHandlerCatalog={clickHandlerCatalog}
       result={result}
+      found={found}
     />
   );
 };

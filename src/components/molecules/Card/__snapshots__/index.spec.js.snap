@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card component class is added list 1`] = `
+<Link
+  className="card"
+  to="/character/1"
+>
+  <div
+    className="photoBlock"
+  >
+    <img
+      alt="Test"
+      className="photo"
+      src="https://test.test"
+    />
+  </div>
+  <div
+    className="description"
+  >
+    <p
+      className="status"
+    >
+      test
+    </p>
+    <p
+      className="name"
+    >
+      Test
+    </p>
+    <time
+      className="date"
+    >
+      12.12.12
+    </time>
+  </div>
+</Link>
+`;
+
+exports[`Card component should render Card component 1`] = `
+<Link
+  className="card list"
+  to="/character/1"
+>
+  <div
+    className="photoBlock"
+  >
+    <img
+      alt="Test"
+      className="photo"
+      src="https://test.test"
+    />
+  </div>
+  <div
+    className="description"
+  >
+    <p
+      className="status"
+    >
+      test
+    </p>
+    <p
+      className="name"
+    >
+      Test
+    </p>
+    <time
+      className="date"
+    >
+      12.12.12
+    </time>
+  </div>
+</Link>
+`;

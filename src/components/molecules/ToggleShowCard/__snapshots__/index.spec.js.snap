@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToggleShowCard component should render ToggleShowCard component 1`] = `
+<div
+  className="icons"
+>
+  <button
+    type="button"
+  >
+    <svg
+      className="active"
+      fill="none"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        height="9"
+        rx="1"
+        strokeWidth="2"
+        width="22"
+        x="1"
+        y="1"
+      />
+      <rect
+        height="9"
+        rx="1"
+        strokeWidth="2"
+        width="22"
+        x="1"
+        y="14"
+      />
+    </svg>
+  </button>
+  <button
+    type="button"
+  >
+    <svg
+      className=""
+      fill="none"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        height="9"
+        rx="1"
+        strokeWidth="2"
+        width="9"
+        x="1"
+        y="1"
+      />
+      <rect
+        height="9"
+        rx="1"
+        strokeWidth="2"
+        width="9"
+        x="1"
+        y="14"
+      />
+      <rect
+        height="9"
+        rx="1"
+        strokeWidth="2"
+        width="9"
+        x="14"
+        y="1"
+      />
+      <rect
+        height="9"
+        rx="1"
+        strokeWidth="2"
+        width="9"
+        x="14"
+        y="14"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`ToggleShowCard component with the transfer of prop grid 1`] = `
+<div
+  className="icons"
+>
+  <button
+    type="button"
+  >
+    <svg
+      className=""
+      fill="none"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        height="9"
+        rx="1"
+        strokeWidth="2"
+        width="22"
+        x="1"
+        y="1"
+      />
+      <rect
+        height="9"
+        rx="1"
+        strokeWidth="2"
+        width="22"
+        x="1"
+        y="14"
+      />
+    </svg>
+  </button>
+  <button
+    type="button"
+  >
+    <svg
+      className="active"
+      fill="none"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        height="9"
+        rx="1"
+        strokeWidth="2"
+        width="9"
+        x="1"
+        y="1"
+      />
+      <rect
+        height="9"
+        rx="1"
+        strokeWidth="2"
+        width="9"
+        x="1"
+        y="14"
+      />
+      <rect
+        height="9"
+        rx="1"
+        strokeWidth="2"
+        width="9"
+        x="14"
+        y="1"
+      />
+      <rect
+        height="9"
+        rx="1"
+        strokeWidth="2"
+        width="9"
+        x="14"
+        y="14"
+      />
+    </svg>
+  </button>
+</div>
+`;

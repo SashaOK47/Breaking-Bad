@@ -1,3 +1,4 @@
+import React from "react";
 import PropTypes from "prop-types";
 import style from "./styles.module.scss";
 import Card from "../../molecules/Card";
@@ -8,12 +9,13 @@ const CharactersSearch = ({
   searchResult,
   clickHandlerCatalog,
   result,
+  found,
 }) => {
   return (
     <div className={style.charactersSearch}>
       {charactersSearch.length ? (
         <p className={style.result}>
-          По вашему запросу <strong>"{searchResult}"</strong> найдено{" "}
+          По вашему запросу <strong>"{searchResult}"</strong> {found}{" "}
           <strong>{charactersSearch.length}</strong> {result}
         </p>
       ) : null}

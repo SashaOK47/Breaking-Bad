@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import style from "./styles.module.scss";
 import { Link } from "react-router-dom";
+import React from "react";
 
 const Search = ({
   handleSubmit,

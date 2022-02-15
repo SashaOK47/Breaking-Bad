@@ -1,0 +1,184 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Character component Character render after isLoader 1`] = `
+<div>
+  <div
+    className="character"
+  >
+    <div
+      className="photo"
+    >
+      <img
+        alt="Test"
+        className="img"
+        src="https://test.test"
+      />
+    </div>
+    <div
+      className="description"
+    >
+      <p
+        className="status"
+      >
+        Test status
+      </p>
+      <p
+        className="name"
+      >
+        Test
+      </p>
+      <time
+        className="date"
+      >
+        <span>
+          Дата рождения:
+        </span>
+         
+        12-12-12
+      </time>
+      <p
+        className="nickname"
+      >
+        <span>
+          Ник-нейм:
+        </span>
+         
+        Test Nickname
+      </p>
+      <blockquote
+        className="quote"
+      >
+        <span>
+          Цитата: 
+        </span>
+        <span>
+           
+        </span>
+      </blockquote>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Character component Character render isLoader 1`] = `<Loader />`;
+
+exports[`Character component Quote render after isLoaderQuote 1`] = `
+<div>
+  <div
+    className="character"
+  >
+    <div
+      className="photo"
+    >
+      <img
+        alt="Test"
+        className="img"
+        src="https://test.test"
+      />
+    </div>
+    <div
+      className="description"
+    >
+      <p
+        className="status"
+      >
+        Test status
+      </p>
+      <p
+        className="name"
+      >
+        Test
+      </p>
+      <time
+        className="date"
+      >
+        <span>
+          Дата рождения:
+        </span>
+         
+        12-12-12
+      </time>
+      <p
+        className="nickname"
+      >
+        <span>
+          Ник-нейм:
+        </span>
+         
+        Test Nickname
+      </p>
+      <blockquote
+        className="quote"
+      >
+        <span>
+          Цитата: 
+        </span>
+        <span>
+           
+          Test quote
+        </span>
+      </blockquote>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Character component should render isLoaderQuote 1`] = `
+<div>
+  <div
+    className="character"
+  >
+    <div
+      className="photo"
+    >
+      <img
+        alt="Test"
+        className="img"
+        src="https://test.test"
+      />
+    </div>
+    <div
+      className="description"
+    >
+      <p
+        className="status"
+      >
+        Test status
+      </p>
+      <p
+        className="name"
+      >
+        Test
+      </p>
+      <time
+        className="date"
+      >
+        <span>
+          Дата рождения:
+        </span>
+         
+        12-12-12
+      </time>
+      <p
+        className="nickname"
+      >
+        <span>
+          Ник-нейм:
+        </span>
+         
+        Test Nickname
+      </p>
+      <blockquote
+        className="quote"
+      >
+        <span>
+          Цитата: 
+        </span>
+        <Loader
+          small={true}
+        />
+      </blockquote>
+    </div>
+  </div>
+</div>
+`;

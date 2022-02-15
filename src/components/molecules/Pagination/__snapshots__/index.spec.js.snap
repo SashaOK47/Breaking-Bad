@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination component should render Pagination component 1`] = `
+<div
+  className="pagination"
+>
+  <div
+    className="paginationList"
+  >
+    <button
+      className="paginationItem active"
+      key="0"
+      onClick={[MockFunction]}
+    >
+      1
+    </button>
+    <button
+      className="paginationItem"
+      key="1"
+      onClick={[MockFunction]}
+    >
+      2
+    </button>
+    <button
+      className="paginationItem"
+      key="2"
+      onClick={[MockFunction]}
+    >
+      3
+    </button>
+    <button
+      className="paginationItem disabled"
+      key="3"
+      onClick={[MockFunction]}
+    >
+      ...
+    </button>
+  </div>
+  <button
+    className="btnPrev"
+    onClick={[MockFunction]}
+  >
+    <img
+      alt="Button Prev"
+      src="test-file-stub"
+    />
+  </button>
+  <button
+    className="btnNext"
+    onClick={[MockFunction]}
+  >
+    <img
+      alt="Button Next"
+      src="test-file-stub"
+    />
+  </button>
+</div>
+`;

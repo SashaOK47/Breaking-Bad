@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Character component should render CharactersSearch component 1`] = `
+<div
+  className="charactersSearch"
+>
+  <p
+    className="result"
+  >
+    По вашему запросу 
+    <strong>
+      "
+      Test
+      "
+    </strong>
+     
+    Найдено
+     
+    <strong>
+      2
+    </strong>
+     
+  </p>
+  <div
+    className="characters"
+  >
+    <Card
+      character={
+        Object {
+          "birthday": "12-12-2012",
+          "char_id": 1,
+          "img": "test.test",
+          "name": "Test Test",
+          "nickname": "Test nickname",
+          "status": "Test status",
+        }
+      }
+      grid={true}
+      key="1"
+    />
+    <Card
+      character={
+        Object {
+          "birthday": "11-11-2011",
+          "char_id": 2,
+          "img": "https://test2.test",
+          "name": "Test Test",
+          "nickname": "Test2 nickname",
+          "status": "Test2 status",
+        }
+      }
+      grid={true}
+      key="2"
+    />
+  </div>
+  <LinkBtn
+    to="#"
+  />
+</div>
+`;
+
+exports[`Character component should render no result 1`] = `
+<div
+  className="charactersSearch"
+>
+  <p
+    className="noResult"
+  >
+    По Вашему запросу 
+    <strong>
+      "
+      123
+      "
+    </strong>
+     результатов не найдено
+  </p>
+  <LinkBtn
+    to="#"
+  />
+</div>
+`;
