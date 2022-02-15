@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToggleCountCard component should render ToggleCountCard component 1`] = `
+<div
+  className="countCard"
+>
+  <div
+    className="list"
+  >
+    <span
+      className="text"
+    >
+      Отобразить карточек: 
+    </span>
+    <div
+      className="btns"
+    >
+      <button
+        className={null}
+        id={10}
+        key="10"
+        onClick={[MockFunction]}
+      >
+        10
+      </button>
+      <button
+        className="active"
+        id={15}
+        key="15"
+        onClick={[MockFunction]}
+      >
+        15
+      </button>
+      <button
+        className={null}
+        id={20}
+        key="20"
+        onClick={[MockFunction]}
+      >
+        20
+      </button>
+      <button
+        className={null}
+        id={25}
+        key="25"
+        onClick={[MockFunction]}
+      >
+        25
+      </button>
+    </div>
+  </div>
+</div>
+`;

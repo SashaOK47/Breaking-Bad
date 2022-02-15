@@ -1,3 +1,4 @@
+import React from "react";
 import PropTypes from "prop-types";
 import style from "./styles.module.scss";
 import Card from "../../molecules/Card";

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error component class is added small 1`] = `
+<div
+  className="loader small"
+/>
+`;
+
+exports[`Error component should render Loader component 1`] = `
+<div
+  className="loader"
+/>
+`;

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotFound component should render NotFound component 1`] = `
+<div
+  className="notFound"
+>
+  <p
+    className="message"
+  >
+    404 Not Found
+  </p>
+  <Link
+    className="link"
+    to="/"
+  >
+    На главную
+  </Link>
+</div>
+`;

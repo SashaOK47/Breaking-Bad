@@ -1,3 +1,4 @@
+import React from "react";
 import style from "./styles.module.scss";
 import { Link } from "react-router-dom";
 

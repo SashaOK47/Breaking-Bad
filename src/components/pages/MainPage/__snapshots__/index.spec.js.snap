@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainPage component should render MainPage component 1`] = `
+<main
+  class="mainPage"
+>
+  <span
+    class="img"
+    style="display:inline-block"
+  />
+</main>
+`;
