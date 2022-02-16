@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import MainPage from "./components/pages/MainPage";
 import CharactersPage from "./components/pages/CharactersPage";
 import CharacterPage from "./components/pages/CharacterPage";
@@ -9,7 +9,7 @@ import "./assets/styles/main.scss";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <div className="app">
         <Header />
         <Routes>
@@ -20,7 +20,7 @@ const App = () => {
         </Routes>
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
