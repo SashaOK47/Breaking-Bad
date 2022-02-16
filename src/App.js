@@ -9,7 +9,7 @@ import "./assets/styles/main.scss";
 
 const App = () => {
   return (
-    <BrowserRouter basename="/Breaking-Bad/">
+    <BrowserRouter>
       <div className="app">
         <Header />
         <Routes>
