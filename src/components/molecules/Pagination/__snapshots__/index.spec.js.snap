@@ -3,6 +3,7 @@
 exports[`Pagination component should render Pagination component 1`] = `
 <div
   className="pagination"
+  data-test="pagination"
 >
   <div
     className="paginationList"
